@@ -26,7 +26,7 @@
 
     <section>
         <h2>Arhitectura Aplicației</h2>
-        <p>GymFit este construit pe o arhitectură web clasica formată din:</p>
+        <p>GymDAW este construit pe o arhitectură web clasica formată din:</p>
         <ul>
             <li><strong>Frontend</strong>: paginile web sunt create folosind HTML, CSS și JavaScript pentru interacțiune.</li>
             <li><strong>Backend</strong>: cod PHP pentru procesarea cererilor, autentificarea utilizatorilor și manipularea datelor.</li>
