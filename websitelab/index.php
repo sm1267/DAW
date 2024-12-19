@@ -12,13 +12,13 @@
             Indiferent dacă ești începător sau sportiv experimentat, GYM DAW este locul perfect pentru a-ți atinge obiectivele de fitness.
         </p>
         <?php
-        if(!isset($_SESSION["user"])) {
+        if(!isset($_SESSION["userid"])) {
           echo"<a href='auth.php' class='btn'>Începe Acum</a>";
         }
         ?>
       </div>
       <div class="header__image">
-        <img src="assets/header.png" alt="header" />
+        <img src="assets/header3.png" alt="header" />
       </div>
     </header>
 
@@ -35,7 +35,7 @@
           Dezvoltarea forței de bază, îmbunătățirea rezistenței și formarea unui obicei sănătos.
           </p>
           <?php
-          if(!isset($_SESSION["user"])) {
+          if(!isset($_SESSION["userid"])) {
             echo"<a href='auth.php'>Join Now <i class='ri-arrow-right-line'></i></a>";
           }
           ?>
@@ -47,7 +47,7 @@
           Creat pentru cei care doresc să tonifieze și să-și sculpteze corpul.
           </p>
           <?php
-          if(!isset($_SESSION["user"])) {
+          if(!isset($_SESSION["userid"])) {
             echo"<a href='auth.php'>Join Now <i class='ri-arrow-right-line'></i></a>";
           }
           ?>
@@ -59,7 +59,7 @@
           Perfect pentru cei care doresc să își îmbunătățească forța fizică și performanța.
           </p>
           <?php
-          if(!isset($_SESSION["user"])) {
+          if(!isset($_SESSION["userid"])) {
             echo"<a href='auth.php'>Join Now <i class='ri-arrow-right-line'></i></a>";
           }
           ?>
@@ -71,7 +71,7 @@
           Un program distractiv, potrivit pentru cei care vor să rămână activi într-un mod relaxant.
           </p>
           <?php
-          if(!isset($_SESSION["user"])) {
+          if(!isset($_SESSION["userid"])) {
             echo"<a href='auth.php'>Join Now <i class='ri-arrow-right-line'></i></a>";
           }
           ?>
@@ -92,7 +92,7 @@
         Te invităm să descoperi o sală de fitness unde vei găsi mai mult decât antrenamente – vei găsi inspirație și sprijin.
         </p>
         <?php
-          if(!isset($_SESSION["user"])) {
+          if(!isset($_SESSION["userid"])) {
             echo"<a href='auth.php' class='btn'>Join Now </a>";
           }
           ?>
@@ -156,7 +156,7 @@
             </p>
           </div>
           <?php
-          if(!isset($_SESSION["user"])) {
+          if(!isset($_SESSION["userid"])) {
             echo"<a href='auth.php' class='btn price__btn'>Join Now </a>";
           }
           ?>
@@ -183,7 +183,7 @@
             </p>
           </div>
           <?php
-          if(!isset($_SESSION["user"])) {
+          if(!isset($_SESSION["userid"])) {
             echo"<a href='auth.php' class='btn price__btn'>Join Now </a>";
           }
           ?>
@@ -210,7 +210,7 @@
             </p>
           </div>
           <?php
-          if(!isset($_SESSION["user"])) {
+          if(!isset($_SESSION["userid"])) {
             echo"<a href='auth.php' class='btn price__btn'>Join Now </a>";
           }
           ?>

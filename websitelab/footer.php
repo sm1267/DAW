@@ -5,7 +5,7 @@
         <div class="footer__logo"><img src="assets/logo.png" alt="logo" /></div>
         <p>
           Fă primul pas către un TU mai sănătos și mai puternic cu planurile noastre de abonament de neegalat. 
-          Hai să transpirăm, să realizăm și să cucerim împreună!
+          Hai să să realizăm împreună!
         </p>
         <div class="footer__socials">
           <a href="#"><i class="ri-facebook-fill"></i></a>

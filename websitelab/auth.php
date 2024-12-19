@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYM DAW</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-    <form action="includes/auth.inc.php" method = "post">
-        <h1>Autentificare</h1>
-        <div class="input-box">
-            <input type="text" placeholder="Username "name="username" required>
-            <i class='bx bxs-user'></i>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>    
+            </div>
+            <form action="includes/login.inc.php"method="post" id="login" class="input-group">
+                <input type="text" name="uid" class="input-field" placeholder="Username" required>
+                <input type="password" name="pwd" class="input-field" placeholder="Password" required>
+                <button type="submit" name="submit" class="submit-btn">Log in</button>
+            </form>
+            <form action="includes/signup.inc.php"method="post" id="register" class="input-group">
+                <input type="text" name="uid" class="input-field" placeholder="Username" required>
+                <input type="password" name="pwd" class="input-field" placeholder="Password" required>
+                <input type="password" name="pwdrepeat" class="input-field" placeholder="Repeat Password" required>
+                <button type="submit" name="submit" class="submit-btn">Register</button>
+            </form>
         </div>
-        <div class="input-box">
-            <input type="password" placeholder="Password" name="password" required>
-            <i class='bx bxs-lock-alt'></i>
-        </div>
-        <button type="submit" class="btn "name="submit" value="register">Login</button>
-    </form>
+    </div>
+    <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+    </script>
 </body>
 </html>
-
-<?php 
-    if (isset($_GET["error"])) {
-        if($_GET["error"]=="invalidusername") {
-            echo "<p>Nume utilizator invalid!</p>";
-        }
-        else if ($_GET["error"]=="usernametaken"){
-            echo "<p>Parola incorecta!</p>";
-        }
-        else if ($_GET["error"]=="none"){
-            echo "<p>Succes!</p>";
-        }
-        else if ($_GET["error"]=="wronglogin"){
-            echo "<p>Parola incorecta!</p>";
-        }
-    }
-?>

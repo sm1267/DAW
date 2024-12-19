@@ -19,13 +19,15 @@
       <div class="nav__logo">
         <a href="#"><img src="assets/logo.png" alt="logo" /></a>
       </div>
+      <ul class="nav__links">
       <?php
-        if (isset($_SESSION["user"])) {
-          echo "<a href='profile.php' class='btn'>Profil</a>";
-          echo "<a href='includes/logout.inc.php' class='btn'>Log Out</a>";
+        if (isset($_SESSION["userid"])) {
+          echo "<li class='link'><a href='#'>Profil</a>";
+          echo "<li class='link'><a href='includes/logout.inc.php'>Log Out</a>";
         }
         else {
-          echo "<a href='auth.php' class='btn'>Join Now</a>";
+          echo "<li class='link'><a href='auth.php'>Join Now</a></li>";
         }
       ?>
+      </ul>
     </nav>
