@@ -23,15 +23,21 @@
       <?php
         if (isset($_SESSION["role"])) {
           if($_SESSION['role'] == 'admin'){
+            echo "<li class='link'><a href='contact.php'>Contact</a></li>";
+            echo "<li class='link'><a href='grafic.php'>Grafic</a></li>";
             echo "<li class='link'><a href='dashboard.php'>Dashboard</a>";
             echo "<li class='link'><a href='includes/logout.inc.php'>Log Out</a>";
           }
           else {
+            echo "<li class='link'><a href='contact.php'>Contact</a></li>";
+            echo "<li class='link'><a href='grafic.php'>Grafic</a></li>";
             echo "<li class='link'><a href='#'>Profil</a>";
             echo "<li class='link'><a href='includes/logout.inc.php'>Log Out</a>";
           }
         }
         else {
+          echo "<li class='link'><a href='contact.php'>Contact</a></li>";
+          echo "<li class='link'><a href='grafic.php'>Grafic</a></li>";
           echo "<li class='link'><a href='auth.php'>Join Now</a></li>";
         }
       ?>
